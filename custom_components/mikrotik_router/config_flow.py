@@ -175,6 +175,7 @@ class MikrotikControllerOptionsFlowHandler(OptionsFlow):
 
     def __init__(self, config_entry):
         """Initialize options flow."""
+        super().__init__()
         self._config_entry = config_entry
         self.options = dict(config_entry.options)
 
